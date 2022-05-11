@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy-develop-server:
+  # Use the official docker image.
+  image: ictu/sshpass
+  stage: deploy
+  script:
+    - sshpass -p $DEVELOP_SERVER_PASSWORD ssh -o StrictHostKeyChecking=no $DEVELOP_SERVER_USER@$DEVELOP_SERVER_IP
+      "cd /home/tuyendv/funzy/funzy-fcard && git add . && git reset --hard && git pull && yarn && yarn build && pm2 restart fe-fcard"
+  only:
+    - dev

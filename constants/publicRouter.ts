@@ -1,0 +1,15 @@
+export const PUBLIC_ROUTER = [
+  "/",
+  "/dang-ky",
+  "/chinh-sach",
+  "/tin-tuc",
+  "/lien-he",
+  "/huong-dan",
+  "/mua-the",
+  "/huong-dan/cau-hoi-thuong-gap",
+  "/kich-hoat-tai-khoan/[phone]",
+  "/tin-tuc/[slug]",
+  "/quen-mat-khau",
+  "/mua-the/ket-qua",
+  "/dieu-khoan-su-dung",
+];

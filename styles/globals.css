@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  body {
+    overflow-x: auto;
+  }
+}
+/* start custom swiper banner */
+#swiper-banner .swiper-button-prev {
+  color: white !important;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  width: 45px;
+  background-image: linear-gradient(
+    90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 106.88%
+  );
+}
+#swiper-banner .swiper-button-next {
+  color: white !important;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  width: 45px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 1.74%,
+    #000000 108.62%
+  );
+}
+#swiper-banner .swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+/* end custom swiper banner */
+.dropdown-option {
+  display: none;
+}
+.dropdown-button:hover .dropdown-option {
+  display: block;
+}
+.custom-width-scroll-bar::-webkit-scrollbar {
+  width: 3px;
+  background-color: #969696;
+}
+@media screen {
+  .screen-print {
+    display: none;
+  }
+}
